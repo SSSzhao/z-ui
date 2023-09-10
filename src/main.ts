@@ -1,5 +1,9 @@
 import { createApp } from 'vue'
-import './style.css'
+import './index.scss'
 import App from './App.vue'
+import button from './button'
 
-createApp(App).mount('#app')
+// 使用全量导出
+import ZUI from '../build/button/'
+
+createApp(App).use(ZUI).mount('#app')

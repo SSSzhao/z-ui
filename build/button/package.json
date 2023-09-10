@@ -1,0 +1,22 @@
+{
+  "name": "button",
+  "version": "0.0.0",
+  "main": "index.umd.js",
+  "module": "index.js",
+  "author": "Z",
+  "description": "Z-UI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/57code/z-ui.git"
+  },
+  "keywords": [
+    "vue3",
+    "组件库",
+    "tsx",
+    "UI"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SSSzhao/z-ui/issues"
+  }
+}

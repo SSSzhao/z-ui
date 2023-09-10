@@ -1,0 +1,89 @@
+// 所有不同type按钮自定义样式
+@import '../../style/variable.scss';
+
+// 按钮类型的配置
+$type: (
+  primary: (
+    color: $z-light-text,
+    background-color: $z-primary
+  ),
+  secondary: (
+    color: $z-text,
+    background-color: $z-block,
+    border-color: $z-line
+  ),
+  text: (
+    padding: 0,
+    color: $z-brand-active
+  )
+);
+
+// 伪类的配置
+$pseudo: (
+  primary: (
+    hover: (
+      background-color: $z-primary-hover
+    ),
+    focus: (
+      background-color: $z-primary-hover
+    ),
+    active: (
+      background-color: $z-primary-active
+    ),
+    disabled: (
+      color: $z-light-text,
+      background-color: $z-primary-disabled,
+      border: none
+    )
+  ),
+  secondary: (
+    hover: (
+      border-color: $z-form-control-line-active,
+      color: $z-brand-active
+    ),
+    focus: (
+      border-color: $z-form-control-line-active,
+      color: $z-brand-active
+    ),
+    active: (
+      border-color: $z-form-control-line-active,
+      color: $z-brand-active
+    ),
+    disabled: (
+      color: $z-disabled-text,
+      background-color: $z-disabled-bg,
+      border: 1px solid $z-disabled-line
+    )
+  ),
+  text: (
+    hover: (
+      color: $z-brand-active-focus
+    ),
+    focus: (
+      color: $z-brand-active-focus
+    ),
+    active: (
+      color: $z-brand-active-focus
+    ),
+    disabled: (
+      color: $z-disabled-text
+    )
+  )
+);
+
+// 按钮尺寸
+$size: (
+  small: (
+    height: 24px,
+    padding: 0 16px,
+    font-size: $z-font-size-sm
+  ),
+  medium: (
+    font-size: $z-font-size-md
+  ),
+  large: (
+    height: 32px,
+    padding: 0 24px,
+    font-size: $z-font-size-lg
+  )
+);

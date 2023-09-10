@@ -1,22 +1,15 @@
 <script setup lang="ts">
-import Text from './components/test'
+import Test from './components/Test'
 </script>
 
 <template>
-  <Text />
+  <div>
+    <Test />
+    <ZButton size="small" block>按钮</ZButton>
+    <ZButton size="medium">按钮</ZButton>
+    <ZButton size="large">按钮</ZButton>
+    <ZButton type="text" size="large" disabled>按钮</ZButton>
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>

@@ -1,11 +1,11 @@
 import { upperFirst } from './utils'
 // 创建组件核心文件模板
 export default function genCoreTemplate(name: string) {
-  const compName = upperFirst(name)
+  const compName = 'Z' + upperFirst(name)
   const propsTypeName = upperFirst(name) + 'Props'
   const propsName = name + 'Props'
   const propsFileName = name + '-type'
-  const className = 's-' + name
+  const className = 'z-' + name
   return `import { defineComponent, toRefs } from 'vue'
 import { ${propsTypeName}, ${propsName} } from './${propsFileName}'
 

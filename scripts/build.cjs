@@ -37,20 +37,20 @@ const createPackageJson = name => {
   // 预设
   const fileStr = JSON.stringify(
     {
-      name: name ? name : 'z-ui',
+      name: name ? name : '@zzwoo/zz-ui',
       version,
-      main: name ? 'index.umd.js' : 'z-ui.umd.js',
-      module: name ? 'index.js' : 'z-ui.js',
+      main: name ? 'index.umd.js' : 'zz-ui.umd.js',
+      module: name ? 'index.js' : 'zz-ui.js',
       author: 'Z',
-      description: 'Z-UI',
+      description: 'zz-ui',
       repository: {
         type: 'git',
-        url: 'git+https://github.com/57code/z-ui.git'
+        url: 'git+https://github.com/57code/zz-ui.git'
       },
       keywords: ['vue3', '组件库', 'tsx', 'UI'],
       license: 'ISC',
       bugs: {
-        url: 'https://github.com/SSSzhao/z-ui/issues'
+        url: 'https://github.com/SSSzhao/zz-ui/issues'
       }
     },
     null,
@@ -105,8 +105,8 @@ const buildAll = async () => {
         rollupOptions,
         lib: {
           entry: entryFile,
-          name: 'z-ui',
-          fileName: 'z-ui',
+          name: 'zz-ui',
+          fileName: 'zz-ui',
           formats: ['es', 'umd']
         },
         outDir: outputDir
